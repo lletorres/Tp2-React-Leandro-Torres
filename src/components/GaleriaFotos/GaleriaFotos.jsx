@@ -8,53 +8,18 @@ import img5 from "../../assets/img/foto5.jpg";
 import img6 from "../../assets/img/foto6.jpg";
 
 const GaleriaFotos = () => {
-  return (
-    <main>
-      <h1 className="titulo-fotos">Galeria de fotos</h1>
-      <div className="medida-carousel">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src={img1} class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={img2} class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={img3} class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={img4} class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={img5} class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={img6} class="d-block w-100" alt="..." />
-            </div>
-          </div>
+  const imagenes = [img1, img2, img3, img4, img5, img6];
 
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleFade"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleFade"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+  return (
+    <main className="galeria-main">
+      <h1 className="titulo-fotos">Galería De Imagenes</h1>
+      <div className="galeria-grid">
+        {imagenes.map((img, i) => (
+          <img key={i} src={img} alt={`Foto ${i + 1}`} />
+        ))}
       </div>
     </main>
   );
 };
+
 export default GaleriaFotos;

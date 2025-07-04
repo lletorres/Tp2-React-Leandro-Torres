@@ -1,14 +1,32 @@
-.medida-carousel {
-  max-width: 50%;
-  height: auto;
-  margin: auto;
+.galeria-grid {
+  column-count: 3;
+  column-gap: 1rem;
+  padding: 1rem;
 }
-@media (max-width: 768px) {
-  .medida-carousel {
-    max-width: 80%;
+
+.galeria-grid img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  break-inside: avoid;
+  transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.03);
+}
+@media (max-width: 900px) {
+  .galeria-grid {
+    column-count: 2;
   }
 }
 
+@media (max-width: 600px) {
+  .galeria-grid {
+    column-count: 1;
+  }
+}
 .titulo-fotos {
   font-size: 25px;
   text-align: center;
@@ -16,4 +34,8 @@
   padding: 10px;
   text-shadow: 2px 2px 4px #474747;
   font-weight: 200;
+}
+
+.galeria-main {
+  flex: 1;
 }
