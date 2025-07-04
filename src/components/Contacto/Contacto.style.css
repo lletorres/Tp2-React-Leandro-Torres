@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  flex: 1;
 }
 
 /* Estilos para el formulario */
@@ -15,7 +16,7 @@
 }
 #formulario-contacto {
   max-width: 400px;
-  margin: 40px auto;
+  margin: 25px auto;
   padding: 20px;
   background-color: #595959;
   border: 3px solid #ccc;
