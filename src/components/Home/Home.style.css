@@ -1,0 +1,201 @@
+.hero {
+  max-width: 100%;
+  height: auto;
+  filter: brightness(0.5);
+}
+
+.texto-hero {
+  position: absolute;
+  top: 160px;
+  left: 65px;
+  color: #fff;
+}
+/* Media query para el texto del hero */
+@media (max-width: 550px) {
+  .texto-hero {
+    top: 100px;
+    left: 40px;
+  }
+}
+@media (max-width: 495px) {
+  .texto-hero {
+    top: 135px;
+    left: 40px;
+  }
+  .titulo-hero {
+    font-size: 25px;
+    width: 252px;
+  }
+}
+
+@media (max-width: 360px) {
+  .titulo-hero {
+    font-size: 20px;
+  }
+}
+
+.parrafo-hero {
+  color: #fff;
+  font-size: 16px;
+}
+@media (max-width: 360px) {
+  .parrafo-hero {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .parrafo-hero {
+    font-size: 14px;
+    width: 230px;
+  }
+}
+
+.presentacion-servicios h1 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-family: "libre franklin", sans-serif;
+}
+@media (max-width: 360px) {
+  .presentacion-servicios h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .presentacion-servicios h1 {
+    font-size: 25px;
+  }
+}
+.presentacion-servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.presentacion-servicios p {
+  color: #fff;
+  font-size: 15px;
+  text-align: left;
+  font-family: "libre franklin", sans-serif;
+  width: 75%;
+  margin: auto;
+}
+.contacto-button {
+  display: inline-block;
+  background-color: #6ab03c;
+  color: white;
+  padding: 7px 14px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  transition: background-color 0.3s;
+}
+.contacto-button:hover {
+  background-color: #66b32c;
+}
+
+.contacto-button {
+  display: inline-block;
+  background-color: #6ab03c;
+  color: white;
+  padding: 7px 14px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  transition: background-color 0.3s;
+}
+.contacto-button:hover {
+  background-color: #66b32c;
+}
+
+/* Galerias fotos y videos */
+
+.titulo-portfolio {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  font-family: "libre franklin", sans-serif;
+}
+.container-cards {
+  display: flex;
+  gap: 20px;
+  flex-direction: grow;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 15px;
+}
+@media (max-width: 768px) {
+  .container-cards {
+    flex-wrap: wrap;
+  }
+}
+.card-fotos {
+  width: 100%; /*para que los cards sean de igual tamaño */
+  height: 270px; /* para que los cards sean de igual tamaño */
+
+  /* non se porque ayuda el position relative para que los botones se muestren */
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  background-image: url("../../assets/img/button-fotos.jpeg");
+  background-size: cover; /* o background-size: contain */
+  background-position: center; /* opcional */
+}
+
+.card-videos {
+  width: 100%; /*para que los cards sean de igual tamaño */
+  height: 270px; /* para que los cards sean de igual tamaño */
+
+  /* non se porque ayuda el position relative para que los botones se muestren */
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  background-image: url("../../assets/img/button-videos.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-fotos a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.card-fotos a:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #000000;
+}
+
+.card-videos a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.card-videos a:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #000000;
+}

@@ -1,0 +1,53 @@
+.main-contacto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/img/contacto-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilos para el formulario */
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#formulario-contacto {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #595959;
+  border: 3px solid #ccc;
+  border-radius: 13px;
+  opacity: 0.9;
+}
+
+#formulario-contacto label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#formulario-contacto button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}

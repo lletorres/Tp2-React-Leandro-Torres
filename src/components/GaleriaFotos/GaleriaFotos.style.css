@@ -1,0 +1,19 @@
+.medida-carousel {
+  max-width: 50%;
+  height: auto;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .medida-carousel {
+    max-width: 80%;
+  }
+}
+
+.titulo-fotos {
+  font-size: 25px;
+  text-align: center;
+  font-family: "libre franklin", sans-serif;
+  padding: 10px;
+  text-shadow: 2px 2px 4px #474747;
+  font-weight: 200;
+}
