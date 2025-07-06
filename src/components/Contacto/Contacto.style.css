@@ -9,11 +9,6 @@
 
 /* Estilos para el formulario */
 
-.contacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #formulario-contacto {
   max-width: 400px;
   margin: 25px auto;
@@ -24,7 +19,7 @@
   opacity: 0.9;
 }
 
-#formulario-contacto label {
+#tipo-contacto {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
@@ -48,7 +43,7 @@
   cursor: pointer;
 }
 
-.buttons {
+.botones-contacto {
   display: flex;
   gap: 10px;
 }

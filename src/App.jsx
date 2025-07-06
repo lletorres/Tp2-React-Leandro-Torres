@@ -7,12 +7,19 @@ import Contacto from "./components/Contacto/Contacto";
 import GaleriaFotos from "./components/GaleriaFotos/GaleriaFotos";
 import Footer from "./components/Footer/Footer";
 import "./styles/general.css";
-
-// Imagen y props para Home
 import imagenHero from "./assets/img/Avata2.jpeg";
+import img1 from "./assets/img/foto1.jpg";
+import img2 from "./assets/img/foto2.jpg";
+import img3 from "./assets/img/foto3.jpg";
+import img4 from "./assets/img/foto4.jpg";
+import img5 from "./assets/img/foto5.jpg";
+import img6 from "./assets/img/foto6.jpg";
+
+const imagenes = [img1, img2, img3, img4, img5, img6]; //hago un array con las imagenes importadas
+//y las paso como props al componente GaleriaFotos
 
 function App() {
-  // Definición de las rutas
+  // Acà se definen las rutas
   const rutas = [
     {
       path: "/",
@@ -28,7 +35,7 @@ function App() {
     },
     { path: "/acerca-de", element: <AcercaDe /> },
     { path: "/contacto", element: <Contacto /> },
-    { path: "/galeria-fotos", element: <GaleriaFotos /> },
+    { path: "/galeria-fotos", element: <GaleriaFotos imagenes={imagenes} /> }, //recibe como props las imagenes
   ];
 
   return (
