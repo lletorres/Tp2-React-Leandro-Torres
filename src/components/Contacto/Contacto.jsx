@@ -117,10 +117,14 @@ const Contacto = () => {
           </button>
         </div>
 
-        {error && <p className="mensaje-error">{error}</p>}
-        {enviado && (
-          <p className="mensaje-enviado">Mensaje enviado correctamente! </p>
-        )}
+        <div className="mensaje-linea">
+          <span className={`mensaje-error ${!error ? "invisible" : ""}`}>
+            {error || "\u00A0"}
+          </span>
+          <span className={`mensaje-enviado ${!enviado ? "invisible" : ""}`}>
+            {enviado ? "Mensaje enviado correctamente!" : "\u00A0"}
+          </span>
+        </div>
       </form>
     </main>
   );
