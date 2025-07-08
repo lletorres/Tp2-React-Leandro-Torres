@@ -22,7 +22,7 @@ const Contacto = () => {
       tipoContacto.trim() === "" ||
       mensaje.trim() === ""
     ) {
-      setError("Por favor, completá todos los campos.");
+      setError("Por favor, completá todos los campos");
       setEnviado(false);
       return;
     }
@@ -59,7 +59,10 @@ const Contacto = () => {
           name="nombre"
           placeholder="Ingrese su nombre"
           value={nombre}
-          onChange={(e) => setNombre(e.target.value)}
+          onChange={(e) => {
+            setNombre(e.target.value);
+            console.log("Nombre:", e.target.value);
+          }}
         />
 
         <input
@@ -68,7 +71,10 @@ const Contacto = () => {
           name="email"
           placeholder="Ingrese su correo electrónico"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            console.log("Email:", e.target.value);
+          }}
         />
 
         <input
@@ -77,7 +83,10 @@ const Contacto = () => {
           name="telefono"
           placeholder="Ingrese su número de teléfono"
           value={telefono}
-          onChange={(e) => setTelefono(e.target.value)}
+          onChange={(e) => {
+            setTelefono(e.target.value);
+            console.log("Telefono:", e.target.value);
+          }}
         />
 
         <select

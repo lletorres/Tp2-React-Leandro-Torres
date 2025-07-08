@@ -1,0 +1,31 @@
+.spinner-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #4caf50;
+  border-radius: 50%;
+  animation: girar 0.8s linear infinite;
+}
+
+.texto-cargando {
+  margin-top: 8px;
+  color: #ccc;
+  font-size: 14px;
+  font-style: italic;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
