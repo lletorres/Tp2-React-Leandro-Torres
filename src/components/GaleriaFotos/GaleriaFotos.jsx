@@ -2,6 +2,7 @@ import React from "react";
 import "./GaleriaFotos.style.css";
 import { useState, useEffect } from "react";
 import Spinner from "../Spinner/Spinner";
+import PropTypes from "prop-types";
 
 const GaleriaFotos = ({ imagenes }) => {
   const [cargando, setCargando] = useState(true);
@@ -25,6 +26,9 @@ const GaleriaFotos = ({ imagenes }) => {
       )}
     </main>
   );
+};
+GaleriaFotos.propTypes = {
+  imagenes: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default GaleriaFotos;

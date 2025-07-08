@@ -2,6 +2,7 @@ import React from "react";
 import "./GaleriaVideos.style.css";
 import { useState, useEffect } from "react";
 import Spinner from "../Spinner/Spinner";
+import PropTypes from "prop-types";
 
 const GaleriaVideos = ({ videos }) => {
   const [cargando, setCargando] = useState(true);
@@ -34,6 +35,9 @@ const GaleriaVideos = ({ videos }) => {
       )}
     </main>
   );
+};
+GaleriaVideos.propTypes = {
+  videos: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default GaleriaVideos;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.style.css";
+import PropTypes from "prop-types";
 
 const Home = ({
   imagen,
@@ -41,6 +42,13 @@ const Home = ({
       </div>
     </>
   );
+};
+Home.propTypes = {
+  imagen: PropTypes.string.isRequired,
+  tituloHero: PropTypes.string.isRequired,
+  parrafoHero: PropTypes.string.isRequired,
+  tituloServicios: PropTypes.string.isRequired,
+  descripcion: PropTypes.string.isRequired,
 };
 
 export default Home;
