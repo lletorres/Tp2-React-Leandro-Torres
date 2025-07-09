@@ -1,5 +1,5 @@
 import React from "react";
-import "./GaleriaVideos.style.css";
+import "../../styles/GaleriaVideos.style.css";
 import { useState, useEffect } from "react";
 import Spinner from "../Spinner/Spinner";
 import PropTypes from "prop-types";

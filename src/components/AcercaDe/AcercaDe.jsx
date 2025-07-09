@@ -1,5 +1,5 @@
 import React from "react";
-import "./AcercaDe.style.css";
+import "../../styles/AcercaDe.style.css";
 
 const AcercaDe = () => {
   return (

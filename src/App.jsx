@@ -55,11 +55,13 @@ function App() {
     <div className="body">
       <Router>
         <Navbar />
+
         <Routes>
           {rutas.map((ruta, index) => (
             <Route key={index} path={ruta.path} element={ruta.element} />
           ))}
         </Routes>
+
         <Footer />
       </Router>
     </div>

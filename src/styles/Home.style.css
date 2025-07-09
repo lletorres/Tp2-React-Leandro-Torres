@@ -140,7 +140,7 @@
   position: relative;
   padding: 5px;
   text-align: center;
-  background-image: url("../../assets/img/button-fotos.jpeg");
+  background-image: url("../assets/img/button-fotos.jpeg");
   background-size: cover; /* o background-size: contain */
   background-position: center; /* opcional */
 }
@@ -153,7 +153,7 @@
   position: relative;
   padding: 5px;
   text-align: center;
-  background-image: url("../../assets/img/button-videos.jpeg");
+  background-image: url("../assets/img/button-videos.jpeg");
   background-size: cover;
   background-position: center;
 }

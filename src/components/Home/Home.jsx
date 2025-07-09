@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Home.style.css";
+import "../../styles/Home.style.css";
 import PropTypes from "prop-types";
 
 const Home = ({

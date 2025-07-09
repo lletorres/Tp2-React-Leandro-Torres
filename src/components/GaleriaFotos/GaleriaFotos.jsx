@@ -1,5 +1,5 @@
 import React from "react";
-import "./GaleriaFotos.style.css";
+import "../../styles/GaleriaFotos.style.css";
 import { useState, useEffect } from "react";
 import Spinner from "../Spinner/Spinner";
 import PropTypes from "prop-types";

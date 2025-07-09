@@ -1,7 +1,7 @@
 import React from "react";
-import "./spinner.style.css"; // Estilos del spinner
+import "../../styles/Spinner.style.css";
 
-const Spinner = ({ texto = "Cargando..." }) => {
+const Spinner = ({ texto }) => {
   return (
     <div className="spinner-contenedor">
       <div className="spinner" />
